@@ -1,11 +1,28 @@
 <?php
+require dirname(__DIR__) . '/vendor/autoload.php';
+use Goutte\Client;
+use Symfony\Component\HttpClient\HttpClient;
+
+$client = new Client(HttpClient::create(array(
+    'headers' => array(
+        'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+        'Accept-Language' => 'en-US,en;q=0.5',
+        'Referer' => 'http://ncov.mohw.go.kr/',
+        'Upgrade-Insecure-Requests' => '1',
+        'Save-Data' => 'on',
+        'Pragma' => 'no-cache',
+        'Cache-Control' => 'no-cache',
+    ),
+)));
+$client->setServerParameter('HTTP_USER_AGENT', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0');
+$client->request('GET', 'http://ncov.mohw.go.kr/');
+
 $basePath = dirname(__DIR__);
 $json = array();
 for($i = 1; $i <= 9; $i++) {
     $rawPageFile = $basePath . '/raw/page/page_' . $i . '.html';
-    if(!file_exists($rawPageFile)) {
-        file_put_contents($rawPageFile, file_get_contents('http://ncov.mohw.go.kr/bdBoardList.do?brdId=1&brdGubun=12&pageIndex=' . $i));
-    }
+    $client->request('GET', 'http://ncov.mohw.go.kr/bdBoardList.do?brdId=1&brdGubun=12&pageIndex=' . $i);
+    file_put_contents($rawPageFile, $client->getResponse()->getContent());
     $rawPage = file_get_contents($rawPageFile);
     $pos = strpos($rawPage, '<div class="onelist open">');
     while(false !== $pos) {
