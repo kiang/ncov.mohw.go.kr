@@ -1,28 +1,9 @@
 <?php
-require dirname(__DIR__) . '/vendor/autoload.php';
-use Goutte\Client;
-use Symfony\Component\HttpClient\HttpClient;
-
-$client = new Client(HttpClient::create(array(
-    'headers' => array(
-        'Accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-        'Accept-Language' => 'en-US,en;q=0.5',
-        'Referer' => 'http://ncov.mohw.go.kr/',
-        'Upgrade-Insecure-Requests' => '1',
-        'Save-Data' => 'on',
-        'Pragma' => 'no-cache',
-        'Cache-Control' => 'no-cache',
-    ),
-)));
-$client->setServerParameter('HTTP_USER_AGENT', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0');
-$client->request('GET', 'http://ncov.mohw.go.kr/');
-
 $basePath = dirname(__DIR__);
 $json = array();
-for($i = 1; $i <= 9; $i++) {
+for($i = 1; $i <= 33; $i++) {
     $rawPageFile = $basePath . '/raw/page/page_' . $i . '.html';
-    $client->request('GET', 'http://ncov.mohw.go.kr/bdBoardList.do?brdId=1&brdGubun=12&pageIndex=' . $i);
-    file_put_contents($rawPageFile, $client->getResponse()->getContent());
+    exec("/usr/bin/curl 'http://ncov.mohw.go.kr/bdBoardList_Real.do' -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: en-US,en;q=0.5' --compressed -H 'Content-Type: application/x-www-form-urlencoded' -H 'Origin: http://ncov.mohw.go.kr' -H 'Connection: keep-alive' -H 'Referer: http://ncov.mohw.go.kr/bdBoardList_Real.do?pageIndex=33&ncv_file_seq=&file_path=&file_name=&brdId=1&brdGubun=12&search_item=1&search_content=' -H 'Upgrade-Insecure-Requests: 1' -H 'Save-Data: on' -H 'Pragma: no-cache' -H 'Cache-Control: no-cache' --data 'pageIndex={$i}&ncv_file_seq=&file_path=&file_name=&brdId=1&brdGubun=12&search_item=1&search_content=' > {$rawPageFile}");
     $rawPage = file_get_contents($rawPageFile);
     $pos = strpos($rawPage, '<div class="onelist open">');
     while(false !== $pos) {
