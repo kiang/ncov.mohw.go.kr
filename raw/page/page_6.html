@@ -13,6 +13,7 @@
 
  &gt; 확진환자 이동경로
 
+
 </title>
 
 
@@ -26,23 +27,23 @@
 <meta name="description" content="코로나바이러스감염증-19 정식 홈페이지로 발생현황, 확진환자 이동경로, 대상별 유의사항, 홍보자료, FAQ, 관련기관(보건소, 선별진료소 찾기), 정부 브리핑, 대응지침 등 안내">	
 <meta name="copyright" content="보건복지부">
     
-<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40">
-<link rel="stylesheet" href="/static/css/co_common.css;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40">
-<link rel="stylesheet" href="/static/css/co_component.css;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40">
-<link rel="stylesheet" href="/static/css/lightslider.min.css;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40">
+<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/co_common.css;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40?ver=2020224">
+<link rel="stylesheet" href="/static/css/co_component.css;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/lightslider.min.css;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40">
 <!--[if lt IE 10]>
-<link rel="stylesheet" href="/static/css/nh_common_ie9.css;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40">
+<link rel="stylesheet" href="/static/css/nh_common_ie9.css;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40">
 <![endif]-->
 
-<script src="/static/js/jquery-1.11.2.min.js;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/lightslider.min.js;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/co_common.js;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40"></script>
-<script src="/static/js/co_gallery.js;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/jquery-1.11.2.min.js;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/lightslider.min.js;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/co_common.js;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40"></script>
+<script src="/static/js/co_gallery.js;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40"></script>
 
 <script type="text/javaScript" language="javascript">
 
 function fn_goMenu(url, brd_id, brd_gubun, data_Gubun){
-
+	
 	$("#brdId").val(brd_id);
 	$("#brdGubun").val(brd_gubun);
 	$("#dataGubun").val(data_Gubun);
@@ -81,6 +82,32 @@ function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
 	
 }
 
+
+function search( where ){
+	
+	var thisForm = $("#"+ where);
+	var thisSearch = $(thisForm).find("#searchTerm");
+	var cont = $(thisSearch).val();
+	
+	//특수문자 체크
+	if (containsChars(cont,"~!@#$%^&*()+|`=\\[]{};:'\".<>/?")) {
+		alert("특수문자는 제외하고 검색해주시기 바랍니다.");
+		$(thisSearch).val("");
+		event.preventDefault();
+		return false;
+	}else if ( cont == "" || cont == null || cont == undefined){
+		alert("검색어를 입력하세요");
+		$(thisSearch).focus();
+		event.preventDefault();
+		return false;
+	}
+	
+	return true;		
+	
+}
+
+
+
 </script>
 
 <form name="menuFrm" id="menuFrm" method="get">
@@ -93,6 +120,7 @@ function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
 	<input name="gubun" id="gubun" type="hidden" />
 </form>
 </head>
+
 <body>
 <div class="wrap nj">
 
@@ -169,12 +197,52 @@ function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
                                         <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '22', '');">자가격리자</a></li>
                             			<li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '24', '');">의료기관</a></li>
                                         <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '25', '');">집단 및 다중이용시설</a></li>
-                                        
+                                        <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '26', '');">기업 및 시장</a></li>
                                     </ul>
                                 </div></div>
                             </li>
                         </ul>
 					</div>
+					
+					<!--20200221 검색추가 시작-->
+					<div class="p_search">
+						<form id="searchForm1" name="searchForm" action="/search/search.jsp" method="post">
+							<input type="hidden" id="pageNum" name="pageNum" value="1" />					<!-- 현재페이지 -->
+							<input type="hidden" id="searchTab" name="searchTab" value="TOTAL" />				<!-- 검색탭 -->
+							<input type="hidden" id="order" name="order" value="weight" />							<!-- 정렬 -->
+							<input type="hidden" id="sDate" name="sDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="eDate" name="eDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="searchRange" name="searchRange" value="total" />		<!-- 검색범위 -->
+							<input type="hidden" id="dateRange" name="dateRange" value="all" />				<!-- 등록범위 -->
+							<div class="n_search">
+								<label for="searchTerm" class="hdn">검색어</label>
+								<input type="text" name="searchTerm" id="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+								<input type="submit" class="btn_search" onclick="search( 'searchForm1' );"><span class="hdn">검색</span>
+							</div>
+						</form>	
+					</div>
+					<!--20200221 검색추가 끝//-->
+					<!--20200221 검색추가(tablet, mobile) 추가-->
+					<a href="" class="btn_global_search"><span class="hdn">통합검색</span><i></i></a>
+					<div class="global_search">
+						<form id="searchForm2" name="searchForm" action="/search/search.jsp" method="post">
+							<input type="hidden" id="pageNum" name="pageNum" value="1" />					<!-- 현재페이지 -->
+							<input type="hidden" id="searchTab" name="searchTab" value="TOTAL" />				<!-- 검색탭 -->
+							<input type="hidden" id="order" name="order" value="weight" />							<!-- 정렬 -->
+							<input type="hidden" id="sDate" name="sDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="eDate" name="eDate" value="" />							<!-- 시작일자 -->
+							<input type="hidden" id="searchRange" name="searchRange" value="total" />		<!-- 검색범위 -->
+							<input type="hidden" id="dateRange" name="dateRange" value="all" />				<!-- 등록범위 -->
+							<div class="n_search">
+								<label for="searchTerm" class="hdn">검색어</label>
+								<input type="text" name="searchTerm" id="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+								<input type="submit" class="btn_search" onclick="search( 'searchForm2' );"><span class="hdn">검색</span>
+							</div>
+						</form>	
+						<a href="" class="btn_close"><span class="hdn">통합검색닫기</span></a>
+					</div>
+					<!--20200221 검색추가 추가 끝//-->
+										
 					<a href="" class="btn_global_menu"><span class="hdn">전체메뉴</span><i></i></a>	
 				</div>
 			</div>
@@ -221,6 +289,7 @@ function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
                                         <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '22', '');">자가격리자</a> </li>
                                         <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '24', '');">의료기관</a> </li>
                                         <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '25', '');">집단 및 다중이용시설</a> </li>
+                                        <li  ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/duBoardList.do', '2', '26', '');">기업 및 시장</a> </li>
                                     </ul>
                                 </div>
                             </li>
@@ -230,6 +299,7 @@ function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
 				<a href="" class="btn_close"><span class="hdn">전체메뉴닫기</span></a>
 			</div>
 		</div>
+
 
 <script type="text/javaScript" language="javascript">
 
@@ -241,26 +311,26 @@ function fn_search(pageNo){
 function fn_submit(){
 	
 	var frm = $("#form1");
-	
+
 	var search_itemnum = $("#u_shcate").val();
 	var search_content =  $("#search_content").val();
-	
-	var numCkeck = /\d/;
-	
+
+	var re = /^[0-9]+$/g;
+
 	if(search_itemnum == "1"){
 		if(search_content.replace(/\s/g, "") != "" ){
-			if(numCkeck.test(search_content)){
-	
-			}else{
+			if(!re.test(search_content)) {
 				alert("확진자 번호는 숫자로만 검색 가능합니다.");
 				return false;
 			}
 		}
 	}
-	
-	frm.attr("action", "/bdBoardList.do;jsessionid=HTDSguqt1m9O3jA8vVGqpPZKoad1RU4SXdwVgR3stYzGY4Ca4mt4KmgSyxM0CEtD.mohwwas1_servlet_engine40");
+
+	frm.attr("action", "/bdBoardList_Real.do;jsessionid=BDx1008aiWzC0BA1r9dXFOO5xWQm1PMlJbyI2AXpXNrfWYcp4Chbfuhaty573ke7.mohwwas1_servlet_engine40");
 	frm.submit();
 }
+
+
 </script>
 
 <form name="form1" id="form1" method="post">
@@ -293,13 +363,22 @@ function fn_submit(){
 
                       <!-- s: content -->
 					<!--텝메뉴-->
-                      <div class="tab_flt cnt2-2-2">
+                      <div class="tab_flt cnt3-3-1">
                           <ul>
                               <li ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '11', '');"><span>발생동향</span></a></li>
+                              <li ><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '13', '');"><span>시도별 발생 동향</span></a></li>
                               <li class="on"><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '12', '');"><span>확진환자 이동경로</span></a></li>
                           </ul>
                       </div>
                       <!--텝메뉴-->
+                      
+					<div class="box_line2">
+						<ul class="s_listin_dot">
+							<li>코로나19가 지역사회로 전파되고 전국적 확산이 우려됨에 따라 정부는 2020년 2월 23일(일) 코로나19 위기경보를 ‘심각’ 단계로 격상하였습니다.</li>
+							<li>이는 검역 및 역학조사 등을 통한 지역사회 감염경로를 확인하는 것에서 벗어나,환자 조기 발견과 치료에 주력하는 단계로 전환되었음을 의미합니다.</li>
+							<li>이에 발맞춰, 확진환자 이동경로 동선 정보 또한 <a href="javascript:void(0);" onclick="javascript:fn_goMenu('/bdBoardList.do', '1', '13', '');" class="s_link_text"><span>지자체별 환자 등 동향정보</span></a>로 대체되어 제공함을 알려드립니다.</li>
+						</ul>
+					</div>                      
 
 					<div class="board_top">
 						<div class="fl_r">
@@ -310,7 +389,7 @@ function fn_submit(){
 										<div class="bts_slct pson_move">
 											<label class="hdn" for="u_shcate">검색항목</label>
 											<select id="u_shcate" name="search_item" class="select" title="검색항목 선택">
-												<option value="1" >확진자 번호</option>
+												<option value="1" selected="selected">확진자 번호</option>
 												<option value="2" >이동경로</option>
 												<option value="3" >입원기관</option>
 											</select>
@@ -354,11 +433,11 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no32" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no469" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>32</span></li>
+										<li><span class="hdn">환자번호 : </span><span>469</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (한국, '09)</span>
+											<span>여<br /> (한국, '92)</span>
 										</li>
 										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
@@ -370,11 +449,11 @@ function fn_submit(){
 											
 											
 											
-												18
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>분당서울대병원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
@@ -391,9 +470,9 @@ function fn_submit(){
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no32">
+								<div class="info_mtxt" id="no469">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>15번째 환자 및 20번째 환자의 접촉자(20번째 환자의 딸)로 2월 2일부터 자택에서 자가격리* 중 증상이 발현되어 2월 18일 검사 결과 양성으로 확인, 현재 분당서울대병원에 격리 입원치료 중<br />	* 15번째 환자 관련하여 2월 2일부터 자가격리 중이었으나, 20번째 환자와의 최종노출일을 기준으로 2월 18일 현재도 계속 자가격리 상태였음</li>	<li>교육당국에 따르면 해당 환자는 초등학생이며, 해당 학교는 1월 3일부터 방학 중이었다고 밝혔음</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -404,11 +483,11 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no31" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no468" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>31</span></li>
+										<li><span class="hdn">환자번호 : </span><span>468</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (한국, '59)</span>
+											<span>여<br /> (한국, '64)</span>
 										</li>
 										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
@@ -420,30 +499,30 @@ function fn_submit(){
 											
 											
 											
-												18
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>대구의료원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 1160 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 1160 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no31">
+								<div class="info_mtxt" id="no468">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>대구 수성구 보건소에서 검사 실시 후 양성 확인, 국가지정입원치료병상(대구의료원) 격리</li>	<li>의료기관(새로난한방병원, 대구 수성구)에 2월 7일부터 입원치료 중 2월 10일경부터 발열이 있었다고 하며, 2월 14일 실시한 영상 검사상 폐렴 소견을 확인하여 항생제 치료 등을 실시하던 중, 2월 17일 대구 수성구 보건소를 방문하여 실시한 진단검사 결과 2월 18일 확진되어, 현재 국가지정입원치료 병상(대구의료원)에 격리입원 중</li>	<li>환자는 2019년 12월 이후 현재까지 외국을 방문한 적이 없었다고 진술하였으며, 감염원, 감염경로와 접촉자에 대해서는 즉각대응팀, 관할 지자체가 함께 역학조사를 진행 중</li>	<li>환자는 2월 7일부터 17일까지 대구 수성구 소재 의료기관(새로난한방병원)에 입원하였으며, 현재까지 해당 의료기관에서 접촉자 128명*이 확인되었다.이 중 병원에 입원 중이던 재원환자 32명은 대구의료원으로 이송되었고, 나머지 접촉자에 대해서는 자가격리 등 조치 중</li></ul><ul class="s_listin_dot">	<li>(2월 6일) 9시 30분경 자차 이용하여 대구 동구 소재 회사 출근</li>	<li>(2월 7일) 자차 이용하여 17시경 대구 수성구 소재 의료기관(새로난 한방병원) 방문하여 외래 진료, 자차 이용하여 자택 귀가, 21시경 자차 이용하여 대구 수성구 소재 의료기관(새로난한방병원) 입원</li>	<li>(2월 8일) 대구 수성구 소재 의료기관(새로난한방병원) 입원 중</li>	<li>(2월 9일) 7시 30분경 자차 이용하여 대구 남구 소재 교회(신천지예수교 증거장막성전 다대오지파대구교회, 대명로 81) 방문, 9시 30분경 자차 이용하여 수성구 소재 의료기관(새로난한방병원)으로 이동</li>	<li>(2월 10~14일) 대구 수성구 소재 의료기관(새로난한방병원) 입원 중</li>	<li>(2월 15일) 11시 50분경 택시 이용하여 대구 동구 소재 호텔(퀸벨호텔 8층) 방문, 점심 식사 후 택시 이용하여 수성구 소재 의료기관(새로난한방병원)으로 이동</li>	<li>(2월 16일) 7시 20분경 택시 이용하여 대구 남구 소재 교회(신천지예수교 증거장막성전 다대오지파대구교회) 방문, 9시 20분경 택시 이용하여 수성구 소재 의료기관(새로난한방병원)으로 이동</li>	<li>(2월 17일) 15시 30분경 지인 차량 이용하여 수성구보건소 방문, 17시경 택시 이용하여 수성구 소재 의료기관(새로난한방병원) 으로 이동 중 다시 보건소로 이동, 18시경 국가지정입원치료병상(대구의료원)으로 이송</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -454,61 +533,11 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no30" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no467" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>30</span></li>
+										<li><span class="hdn">환자번호 : </span><span>467</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (한국, '52)</span>
-										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>29번째 환자의 접촉자(배우자)<br /> (확인 중)</span></li>
-										<li>
-										<span class="hdn">확진일자 : </span><span>
-											
-												2.
-											
-											
-											
-											
-											
-												16
-											
-										</span>
-										</li>
-										<li><span class="hdn">입원기관 : </span><span>서울대학교병원</span></li>
-										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
-										    <span>
-										    	
-										    	 27 
-										    	 
-										    	 
-										    	 <br />
-										    	 (
-										    	 
-										    	 27 
-										    	 
-										    	 
-										    	 )</span>
-										</li>
-									</ul>
-								</a>
-								<div class="info_mtxt" id="no30">
-									<!-- db load -->
-									<ul class="s_listin_dot">	<li>29번째 환자의 배우자로 29번째 환자 접촉자 대상 검사를 통해 확진, 현재 상태 안정적</li>	<li>접촉자에 대해서는 자가격리 등 조치 중, 2월 6일경 기침, 오한, 근육통 증상이 발생하였으며, 증상 발현 1일 전부터 격리 시점까지 의료기관, 약국 등을 방문하였으며, 방문한 장소 및 접촉자에 대해 추가 조사 중</li>	<li>(2월 5~7일) 도보로 서울시 중구 소재 회사 출근(06:00~08:00), 도보로 귀가</li>	<li>(2월 8일) 종로구 소재 의료기관(서울대학교병원 외래) 방문(09:30~10:30)</li>	<li>(2월 9일) 이동 경로 확인 중</li>	<li>(2월 10일) 9시경 종로구 소재 의료기관(강북서울외과의원) 방문, 10시경 지하철 이용하여 지인들과 함께 인천시 중구 용유도 방문, 점심 식사 후 지하철 이용하여 경인아라뱃길 방문, 지하철 이용하여 동묘앞역 이동, 18시 55분경 종로구 소재 약국(단골온누리약국, 지봉로 50) 방문</li>	<li>(2월 11~12일) 이동 경로 확인 중</li>	<li>(2월 13일) 12시경 종로구 소재 식당(명륜진사갈비 서울동묘점) 방문(11:58~13:34), 13시 40분경 종로구 소재 카페(스타벅스 동묘앞역점) 방문(13:43~15:10)</li>	<li>(2월 14일) 9시 20분경 택시 이용하여 중구 소재 회사 출근, 10시 20분경 도보로 종로구 소재 의료기관(강북서울외과의원) 방문, 10시 45분경 종로구 소재 약국(단골온누리약국) 방문</li>	<li>(2월 15일) 29번째 환자 간호 위해 성북구 소재 의료기관(고려대학교 안암병원) 방문</li>	<li>(2월 16일) 성북구 소재 의료기관(고려대학교 안암병원) 방문 후 자택 귀가, 관할 보건소 선별진료소 진료를 거쳐 확진 판정 받고 국가지정입원치료병상(서울대학교병원)으로 이송</li></ul>
-									<!-- db load // -->											
-								</div>
-							</div>
-							<!--1개 끝//-->
-							
-							
-							
-						
-							<!--1개 시작-->
-							<div class="onelist open">
-								<a href="#no29" title="클릭하시면 이동경로가 열립니다.">
-									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>29</span></li>
-										<li><span class="hdn">인적사항 : </span>
-											<span>남<br /> (한국, '38)</span>
+											<span>여<br /> (한국, '75)</span>
 										</li>
 										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
@@ -520,30 +549,30 @@ function fn_submit(){
 											
 											
 											
-												16
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>서울대학교병원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 117 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 117 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no29">
+								<div class="info_mtxt" id="no467">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>감염원인 조사를 위해 환자의 증상 발현일 이전 2주간(1월 20일~2월 4일)의 행적을 토대로 조사 범위를 확대하고 있음, 환자는 증상 발현일 이전에 종로노인종합복지관, 기원 등을 이용한 것으로 확인되어, 해당 시설 이용자 등을 중심으로&nbsp; 의심 증상 여부, 해외 여행력 등을 조사 중</li>	<li>2월 15일 흉부 불편감으로 고려대학교 안암병원 응급실에 내원하여 심근경색 의심 하에 진료를 받던 중, 영상검사 상 폐렴 소견을 발견한 의료진의 판단에 따라 코로나19 진단검사를 실시하였고, 2월 16일 양성으로 확인</li>	<li>현재 국가지정입원치료병상(서울대학교병원)에 격리입원 중이며, 발열과 폐렴 소견이 있으나 환자 상태는 전반적으로 안정적</li>	<li>환자는 2019년 12월 이후 현재까지 외국을 방문한 적이 없었다고 진술하였으며, 감염원, 감염경로와 접촉자에 대해서는 즉각대응팀, 관할 지자체가 함께 역학조사를 진행 중</li></ul><ul class="s_listin_dot">	<li>(2월 4일) 지하철 이용하여 동묘앞역에서 신설동역 이동(15:53~15:57), 지하철 이용하여 신설동역에서 동묘앞역 이동(21:36~21:46)</li>	<li>(2월 5일)&nbsp;지하철 이용하여 동대문역에서 녹양역 이동(11:41~12:41), 지하철 이용하여 녹앙역에서 동대문역 이동(12:43~13:38), 14시 50분경 서울시 종로구 소재 의료기관(신중호내과의원, 지봉로 61-1) 방문, 15시 10분경 종로구 소재 약국(보람약국, 종로 326) 방문, 15시 20분경 종로구 소재 의료기관(강북서울외과의원, 지봉로 29) 방문</li>	<li>(2월 6일) 이동 경로 확인 중</li>	<li>(2월 7일) 14시 20분경 종로구 소재 의료기관(신중호내과의원) 방문, 지하철 이용하여 동묘앞역에서 소요산역 이동(14:37~15:53)</li>	<li>(2월 8일) 11시 30분경 종로구 소재 의료기관(강북서울외과의원) 방문, 11시 40분경 종로구 소재 약국(봄약국, 지봉로 37-1) 방문</li>	<li>(2월 9일) 이동 경로 확인 중</li>	<li>(2월 10일) 9시 50분경 종로구 소재 의료기관(강북서울외과의원) 방문, 10시 15분경 종로구 소재 약국(보람약국) 방문, 지하철 이용하여 신설동역에서 덕정역 이동(14:04~14:53), 지하철 이용하여 덕정역에서 동묘앞역 이동(14:58~16:14)</li>	<li>(2월 11일) &nbsp;11시경 종로구 소재 의료기관(강북서울외과의원) 방문</li>	<li>(2월 12일) 10시 50분경 종로구 소재 의료기관(강북서울외과의원) 방문, 11시 5분경 종로구 소재 약국(봄약국) 방문</li>	<li>(2월 13일) 이동 경로 확인 중</li>	<li>(2월 14일)&nbsp;지하철 이용하여 창신역-봉화산 왕복 이동(17:57~18:53)</li>	<li>(2월 15일) 11시경 종로구 소재 의료기관(강북서울외과의원) 방문, 11시 45분경 성북구 소재 의료기관 응급실(고려대학교 안암병원) 방문, 16시경 음압격리실로 이동</li>	<li>(2월 16일) 국가지정입원치료병상(서울대학교병원)으로 이송</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -554,13 +583,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no28" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no466" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>28</span></li>
+										<li><span class="hdn">환자번호 : </span><span>466</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (중국, '89)</span>
+											<span>여<br /> (한국, '48)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>3번째 환자 접촉자<br /> (2차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -570,30 +599,30 @@ function fn_submit(){
 											
 											
 											
-												10
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>격리 해제</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 1 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 1 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no28">
+								<div class="info_mtxt" id="no466">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>(1월 26일~2월 10일) 3번째 환자의 밀접접촉자로 분류되어 자가격리 중, 자가격리 기간 중 발열 확인되지 않았으며, 격리 전 이루어진 타 치료와 관련된 진통소염제를 복용중이어서 추가 증상 확인이 제한적이었던 점을 고려, 잠복기 완료 시점을 앞두고 검사를 시행(2.8일), 1차 검사상 양성과 음성의 경계선상의 결과가 나와 재검사 결정<br />	&nbsp; - 자가격리를 유지하며 24시간 간격으로 2차례 재검(2.9일, 2.10일)을 실시한 끝에 2월 10일 최종적으로 양성으로 판정하고, 현재 국가 지정입원치료병상(명지병원)에 입원중</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -604,13 +633,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no27" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no465" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>27</span></li>
+										<li><span class="hdn">환자번호 : </span><span>465</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (중국, '82)</span>
+											<span>여<br /> (한국, '77)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>25번째 환자의 가족<br /> (2차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -619,31 +648,31 @@ function fn_submit(){
 											
 											
 											
-												9
 											
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>경기도의료원 안성병원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 40 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 0 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no27">
+								<div class="info_mtxt" id="no465">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>(1월 31일) 마카오에서 인천공항으로 귀국(20:40, 에어마카오 NX826), 21시경 택시 이용하여 자택 이동</li>	<li>(2월 1~2일) 종일 자택에 머무름</li>	<li>(2월 3일) 자차 이용하여 19시 30분경 시흥시 소재 음식점(태양38년전통 그옛날손짜장, 안현동 180-3) 방문</li>	<li>(2월 4일) 종일 자택에 머무름</li>	<li>(2월 5일) 자차 이용하여 시흥시 소재 의료기관(신천연합병원 선별진료소) 방문(15:30~17:25), 자차 이용하여 자택 귀가</li>	<li>(2월 6~8일) 종일 자택에 머무름</li>	<li>(2월 9일) 경기도의료원 안성병원으로 이송</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -654,13 +683,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no26" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no464" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>26</span></li>
+										<li><span class="hdn">환자번호 : </span><span>464</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>남<br /> (한국, '68)</span>
+											<span>여<br /> (한국, '98)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>25번째 환자의 가족<br /> (2차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -669,31 +698,31 @@ function fn_submit(){
 											
 											
 											
-												9
 											
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>경기도의료원 안성병원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 0 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 0 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no26">
+								<div class="info_mtxt" id="no464">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>(2월 7일) 어머니와 함께 9시경 자차 이용하여 시흥시 소재 의료기관 (신천연합병원 선별진료소) 방문, 자차 이용하여 슈퍼마켓(엘마트 시흥점) 방문(10:44~11:13), 자차 이용하여 자택 귀가</li>	<li>(2월 8일) 어머니와 함께 14시경 자차 이용하여 시흥시 소재 의료기관 (신천연합병원 선별진료소) 방문, 자차 이용하여 자택 귀가</li>	<li>(2월 9일) 경기도의료원 안성병원으로 이송</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -704,13 +733,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no25" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no463" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>25</span></li>
+										<li><span class="hdn">환자번호 : </span><span>463</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (한국, '46)</span>
+											<span>여<br /> (한국, '73)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>27번째 확진자 접촉자<br /> (2차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -719,31 +748,31 @@ function fn_submit(){
 											
 											
 											
-												9
 											
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>분당서울대병원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 12 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 11 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no25">
+								<div class="info_mtxt" id="no463">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>(2월 5일) 도보로 경기도 시흥시 소재 슈퍼마켓(매화할인마트) 방문 (15:42~15:59), 도보로 자택 귀가</li>	<li>(2월 6일) 종일 자택에 머무름</li>	<li>(2월 7일) 9시경 자차 이용하여 시흥시 소재 의료기관(신천연합병원 선별진료소) 방문, 자차 이용하여 슈퍼마켓(엘마트 시흥점) 방문 (10:44~11:13), 자차 이용하여 자택 귀가</li>	<li>(2월 8일) 14시경 자차 이용하여 시흥시 소재 의료기관(신천연합병원 선별진료소) 방문, 자차 이용하여 자택 귀가</li>	<li>(2월 9일) 확진 판정 받고 분당서울대학교병원으로 이송</li></ul>
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -754,13 +783,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no24" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no462" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>24</span></li>
+										<li><span class="hdn">환자번호 : </span><span>462</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>남<br /> (한국, '92)</span>
+											<span>여<br /> (한국, '87)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>우한방문<br /> (1차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -769,31 +798,31 @@ function fn_submit(){
 											
 											
 											
-												6
 											
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>국립중앙의료원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 0 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 0 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no24">
+								<div class="info_mtxt" id="no462">
 									<!-- db load -->
-									<ul class="s_listin_dot"><li>24번째 환자는 우한 교민 임시생활시설(아산)에서 생활 중 인후통 증상으로 검사 실시하여 결과 양성 확인, 국립중앙의료원 입원</li></ul>                                                  
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -804,13 +833,13 @@ function fn_submit(){
 						
 							<!--1개 시작-->
 							<div class="onelist open">
-								<a href="#no23" title="클릭하시면 이동경로가 열립니다.">
+								<a href="#no461" title="클릭하시면 이동경로가 열립니다.">
 									<ul class="info_s">
-										<li><span class="hdn">환자번호 : </span><span>23</span></li>
+										<li><span class="hdn">환자번호 : </span><span>461</span></li>
 										<li><span class="hdn">인적사항 : </span>
-											<span>여<br /> (중국, '62)</span>
+											<span>남<br /> (한국, '67)</span>
 										</li>
-										<li><span class="hdn">감염경로(차수) : </span><span>우한방문<br /> (1차)</span></li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
 										<li>
 										<span class="hdn">확진일자 : </span><span>
 											
@@ -819,31 +848,81 @@ function fn_submit(){
 											
 											
 											
-												6
 											
+												22
 											
 										</span>
 										</li>
-										<li><span class="hdn">입원기관 : </span><span>국립중앙의료원</span></li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
 										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
 										    <span>
 										    	
-										    	 23 
 										    	 
+										    	 	확인 중 
 										    	 
 										    	 <br />
 										    	 (
 										    	 
-										    	 7 
 										    	 
+										    	 	확인 중
 										    	 
 										    	 )</span>
 										</li>
 									</ul>
 								</a>
-								<div class="info_mtxt" id="no23">
+								<div class="info_mtxt" id="no461">
 									<!-- db load -->
-									<ul class="s_listin_dot">	<li>(2월 2일) 12시경 서울시 중구 소재 호텔(프레지던트호텔)에서 퇴실 후 차량이용하여 서울시 중구 소재 백화점(롯데백화점 본점*, 12:15~13:19체류) 방문, 지인 차량 이용하여 13시경 서울시 서대문구 숙소로 이동, 지인 차량 이용하여 14시 20분경 서울시 마포구 소재 대형마트(이마트 마포공덕점) 방문 (14:18~16:09 체류), 지인 차량 이용하여 서울시 서대문구 숙소로 이동</li>	<li>&nbsp; * (4층) 플리츠플리즈(12:25&sim;12:42), (1층) 텍스 리펀드(12:48&sim;12:52, 13:15&sim;13:18) (지하 1층) 창화루(12:55&sim;13:12)</li>	<li>(2월 3~5일) 종일 숙소에 머무름</li>	<li>(2월 6일) 숙소에 머물다 국립중앙의료원으로 이송</li></ul>
+									
+									<!-- db load // -->											
+								</div>
+							</div>
+							<!--1개 끝//-->
+							
+							
+							
+						
+							<!--1개 시작-->
+							<div class="onelist open">
+								<a href="#no460" title="클릭하시면 이동경로가 열립니다.">
+									<ul class="info_s">
+										<li><span class="hdn">환자번호 : </span><span>460</span></li>
+										<li><span class="hdn">인적사항 : </span>
+											<span>남<br /> (한국, '04)</span>
+										</li>
+										<li><span class="hdn">감염경로(차수) : </span><span>확인 중<br /> (확인 중)</span></li>
+										<li>
+										<span class="hdn">확진일자 : </span><span>
+											
+												2.
+											
+											
+											
+											
+											
+												22
+											
+										</span>
+										</li>
+										<li><span class="hdn">입원기관 : </span><span>배정 중</span></li>
+										<li><span class="hdn">접촉자수 (격릭조치 중) : </span>
+										    <span>
+										    	
+										    	 
+										    	 	확인 중 
+										    	 
+										    	 <br />
+										    	 (
+										    	 
+										    	 
+										    	 	확인 중
+										    	 
+										    	 )</span>
+										</li>
+									</ul>
+								</a>
+								<div class="info_mtxt" id="no460">
+									<!-- db load -->
+									
 									<!-- db load // -->											
 								</div>
 							</div>
@@ -858,7 +937,7 @@ function fn_submit(){
 					<!-- e: content -->								
 					<!--페이징-->
 					<div class="paging">
-						&nbsp;&nbsp;<a href="#" onclick="fn_search(1); return false;">1</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(2); return false;">2</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(3); return false;">3</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(4); return false;">4</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(5); return false;">5</a>&nbsp;&nbsp;<strong>6</strong>&nbsp;&nbsp;<a href="#" onclick="fn_search(7); return false;">7</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(8); return false;">8</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(9); return false;">9</a>&nbsp;&nbsp;
+						<a href="#" class="p_first" title="처음" onclick="fn_search(1); return false;"><span class="hdn">처음페이지</span></a><a href="#" class="p_prev" title="이전" onclick="fn_search(1); return false;"><span class="hdn">이전페이지</span></a>&nbsp;&nbsp;<a href="#" onclick="fn_search(1); return false;">1</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(2); return false;">2</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(3); return false;">3</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(4); return false;">4</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(5); return false;">5</a>&nbsp;&nbsp;<strong>6</strong>&nbsp;&nbsp;<a href="#" onclick="fn_search(7); return false;">7</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(8); return false;">8</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(9); return false;">9</a>&nbsp;&nbsp;<a href="#" onclick="fn_search(10); return false;">10</a>&nbsp;&nbsp;<a href="" class="p_next" title="다음" onclick="fn_search(11); return false;"><span class="hdn">다음페이지</span></a><a href="" class="p_last" title="끝" onclick="fn_search(33); return false;"><span class="hdn">끝페이지</span></a>
 
 					</div>
 	                <!--페이징-->
